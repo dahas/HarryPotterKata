@@ -5,8 +5,7 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Martin Wolf",
-            "email": "dahas@gmx.de"
+            "name": "Martin Wolf"
         }
     ],
     "autoload": {

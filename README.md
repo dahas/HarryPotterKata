@@ -17,6 +17,11 @@ $ php -S localhost:2400 -t public
 
 Open Browser: http://localhost:2400
 
+## Requirements
+
+- PHP 8.1.2
+- PHPUnit 
+
 ## Unit Tests
 
 Alle Tests befinden sich im Verzeichnis `application/tests`.
