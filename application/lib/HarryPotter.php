@@ -42,7 +42,7 @@ class HarryPotter {
         return $this->basket;
     }
 
-    public function calculateDiscount()
+    public function calculateDiscount(): int|float
     {
         $setPrice = [];
         foreach ($this->basket as $set) {
