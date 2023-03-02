@@ -60,3 +60,8 @@ Die Berechnung eines Preises, Angebots und/oder eines Rabatts sollte aus Sicherh
 ### Testen
 
 Die Angebotsberechnung ist zudem eine kritische Funktion, die bei einem falschen Ergebnis sowohl beim Anbieter als auch beim Anwender Schaden verursachen kann. Daher muss die Kalkulation zwingend validiert und abgesichert werden. Dazu werden für unterschiedliche Use-Cases **Unit-Tests** implementiert.
+
+
+## Bekannte Probleme
+
+Unit Test H schlägt fehl. Statt 29.60 wird 30.40 berechnet.
