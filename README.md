@@ -1,6 +1,27 @@
 # Harry Potter Kata
 
-## Challenge
+## Usage
+
+Clone Repo:
+
+````
+$ git clone https://github.com/dahas/HarryPotterKata.git
+$ cd HarryPotterKata
+````
+
+Start Webserver:
+
+````
+$ php -S localhost:2400 -t public
+````
+
+Open Browser: http://localhost:2400
+
+## Unit Tests
+
+Alle Tests befinden sich im Verzeichnis `application/tests`.
+
+# Challenge
 
 Ein Buchhändler hat sich ein neues Rabattsystem für Harry Potter Bücher einfallen lassen. Du sollst dieses Rabattsystem implementieren und für den Kunden immer das günstigste Angebot berechnen.
 
@@ -31,7 +52,7 @@ Dadurch ergeben sich 20 % Rabatt auf die jeweilige Reihe und insgesamt auf jedes
 
 **8 Bücher á 6.40 Euro = 51.20 Euro**
 
-### Matrix
+## Matrix
 
 | UnitTest |  1  |  2  |  3  |  4  |  5  | Formel                                  | Angebot |
 |------|-----|-----|-----|-----|-----|-----------------------------------------|---------|
@@ -47,21 +68,20 @@ Dadurch ergeben sich 20 % Rabatt auf die jeweilige Reihe und insgesamt auf jedes
 |**K** |  5  |  5  |  4  |  5  |  4  | 3 * (5 * 8 * 0.75) + 2 * (4 * 8 * 0.8)	| 141.20  |
 
 
-## Vorgehen
+# Vorgehen
 
-### Der Algorithmus
+## Der Algorithmus
 
 Die Herausforderung besteht im Kern darin, einen Algorithmus zu entwickeln, der die im Warenkorb befindlichen Bücher in Sets zusammenstellt, sodass insgesamt der maximale Rabatt gewährt werden kann. D. h. die Bände müssen auf die Sets so verteilt werden, dass die Sets möglichst umfangreich werden. Im Idealfall 5 unterschiedliche Bände pro Set.
 
-### Wahl der richtigen Technologie
+## Wahl der richtigen Technologie
 
-Die Berechnung eines Preises, Angebots und/oder eines Rabatts sollte aus Sicherheitsgründen **auf dem Server** erfolgen und NICHT im Browser des Nutzers. Für die Berechnung wird deshalb ein **PHP-Skript** entwickelt.
+Die Berechnung eines Preises, Angebots und/oder eines Rabatts muss aus Sicherheitsgründen **auf dem Server** erfolgen und NICHT im Browser des Nutzers. Für die Berechnung wird deshalb ein **PHP-Skript** entwickelt.
 
-### Testen
+## Testen
 
-Die Angebotsberechnung ist zudem eine kritische Funktion, die bei einem falschen Ergebnis sowohl beim Anbieter als auch beim Anwender Schaden verursachen kann. Daher muss die Kalkulation zwingend validiert und abgesichert werden. Dazu werden für unterschiedliche Use-Cases **Unit-Tests** implementiert.
+Die Angebotsberechnung ist eine kritische Funktion, die bei einem falschen Ergebnis sowohl beim Anbieter als auch beim Anwender Schaden verursachen kann. Daher muss die Kalkulation zwingend validiert und abgesichert werden. Dazu werden für unterschiedliche Use-Cases **Unit-Tests** implementiert.
 
+# Known Problems
 
-## Bekannte Probleme
-
-Unit Test H schlägt fehl. Statt 29.60 wird 30.40 berechnet.
+**Test H** schlägt fehl. Statt 29.60 wird 30.40 berechnet.
