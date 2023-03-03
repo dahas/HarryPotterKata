@@ -2,14 +2,12 @@
 
 namespace PHPSkeleton\App;
 
-use PHPSkeleton\Sources\enums\Books;
+use PHPSkeleton\Sources\enums\Book;
 
 class HarryPotter {
 
     private array $basket = [];
-
     private int $price = 8;
-
     private array $discount = [1, 0.95, 0.9, 0.8, 0.75];
 
     /**
@@ -21,7 +19,7 @@ class HarryPotter {
      * - Finally we sort the basket so the smallest set is at the top. By doing this 
      *   we evenly distribute the sets, so the user gets the best possible discount.
      */
-    public function add2Basket(Books $book, int $amount): void
+    public function add2Basket(Book $book, int $amount): void
     {
         for ($x = 0; $x < $amount; $x++) {
             if (isset($this->basket[$x])) {
