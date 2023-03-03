@@ -1,15 +1,25 @@
 # Harry Potter Kata
 
-## Usage
+## Requirements
 
-Clone Repo:
+- PHP 8.1.2
+- Composer
+- PHPUnit 
+
+## Installation & Usage
 
 ````
 $ git clone https://github.com/dahas/HarryPotterKata.git
 $ cd HarryPotterKata
+$ cd application
+$ composer install
 ````
 
-Start Webserver:
+## Im Browser ausführen 
+
+(Es gibt momentan noch keine UI. Führe das Programm bitte in der Konsole aus. Siehe unten.)
+
+Sieh zu, dass Du Dich im Root-Verzeichnis `HarryPotterKata` befindest. Starte von dort aus den Webserver:
 
 ````
 $ php -S localhost:2400 -t public
@@ -17,14 +27,24 @@ $ php -S localhost:2400 -t public
 
 Open Browser: http://localhost:2400
 
-## Requirements
+## In der Konsole ausführen
 
-- PHP 8.1.2
-- PHPUnit 
+Auch hier musst Du Dich im Root-Verzeichnis `HarryPotterKata` befinden. Führe `debug.php` im Terminal der IDE aus.
 
-## Unit Tests
+````
+$ php debug.php
+````
+
+## Tests ausführen
 
 Alle Tests befinden sich im Verzeichnis `application/tests`.
+
+Tests ausführen:
+
+````
+$ cd application
+$ composer test
+````
 
 # Challenge
 
@@ -77,7 +97,7 @@ Dadurch ergeben sich 20 % Rabatt auf die jeweilige Reihe und insgesamt auf jedes
 
 ## Der Algorithmus
 
-Die Herausforderung besteht im Kern darin, einen Algorithmus zu entwickeln, der die im Warenkorb befindlichen Bücher in Sets zusammenstellt, sodass insgesamt der maximale Rabatt gewährt werden kann. D. h. die Bände müssen auf die Sets so verteilt werden, dass die Sets möglichst umfangreich werden. Im Idealfall 5 unterschiedliche Bände pro Set.
+Die Herausforderung besteht im Kern darin, einen Algorithmus zu entwickeln, der die im Warenkorb befindlichen Bücher in Sets zusammenstellt, sodass insgesamt der maximale Rabatt gewährt werden kann. D. h. die Bände müssen auf die Sets so verteilt werden, dass die Sets möglichst umfangreich werden, denn je mehr Bände in einem Set sind, desto mehr Rabatt gibt es. 
 
 ## Wahl der richtigen Technologie
 
@@ -87,6 +107,6 @@ Die Berechnung eines Preises, Angebots und/oder eines Rabatts muss aus Sicherhei
 
 Die Angebotsberechnung ist eine kritische Funktion, die bei einem falschen Ergebnis sowohl beim Anbieter als auch beim Anwender Schaden verursachen kann. Daher muss die Kalkulation zwingend validiert und abgesichert werden. Dazu werden für unterschiedliche Use-Cases **Unit-Tests** implementiert.
 
-# Known Problems
+# Known Bugs
 
-**Test H** schlägt fehl. Statt 29.60 wird 30.40 berechnet.
+**Test H** schlägt fehl. Statt 29.60 wird 30.40 berechnet. In diesem Fall ergibt ein Set mit drei Bänden und einem doppeltem Buch mehr Rabatt, als 2 Sets mit je 2 Bänden. Hier muss der Algorithums noch verfeinert werden.
