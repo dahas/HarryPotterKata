@@ -92,12 +92,15 @@ Dadurch ergeben sich 20 % Rabatt auf die jeweilige Reihe und insgesamt auf jedes
 |**J** |  2  |  2  |  2  |  1  |  1  | 4 * 8 * 0.8 + 4 * 8 * 0.8				      	|  51.20  |
 |**K** |  5  |  5  |  4  |  5  |  4  | 3 * (5 * 8 * 0.75) + 2 * (4 * 8 * 0.8)	| 141.20  |
 
-
 # Vorgehen
 
 ## Der Algorithmus
 
 Die Herausforderung besteht im Kern darin, einen Algorithmus zu entwickeln, der die im Warenkorb befindlichen Bücher in Sets zusammenstellt, sodass insgesamt der maximale Rabatt gewährt werden kann. D. h. die Bände müssen auf die Sets so verteilt werden, dass die Sets möglichst umfangreich werden, denn je mehr Bände in einem Set sind, desto mehr Rabatt gibt es. 
+
+### Fallstrick 
+
+Der Rabatt ist nicht gleimäßig in 0.5% Schritte gestaffelt. Das macht den Algorithmus fehleranfällig. 
 
 ## Wahl der richtigen Technologie
 
