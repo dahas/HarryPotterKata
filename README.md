@@ -100,7 +100,7 @@ Die Herausforderung besteht im Kern darin, einen Algorithmus zu entwickeln, der 
 
 ### Fallstrick 
 
-Der Rabatt ist nicht gleimäßig in 0.5% Schritte gestaffelt. Das macht den Algorithmus fehleranfällig. 
+Der Rabatt ist nicht gleimäßig in 5%-Schritte gestaffelt. Das macht den Algorithmus fehleranfällig. 
 
 ## Wahl der richtigen Technologie
 
