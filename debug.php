@@ -19,6 +19,5 @@ $basket = $hp->getBasket();
 // print_r($basket);
 
 echo "----------------------------------------------\n";
-echo "Warenkorb: 2 x Bd 1, 2 x Bd 2, 2 x Bd 3, 1 x Bd 4, 1 x Bd 5:\n";
 echo "Angebot: " . $hp->calculateDiscount() . "\n";
 echo "----------------------------------------------\n";
