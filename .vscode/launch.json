@@ -3,20 +3,9 @@
     "version": "0.2.0",
     "configurations": [
 
-        //// Debug currently open PHP file
+        //// Debug Backend
         {
-            "name": "PHP File",
-            "type": "php",
-            "request": "launch",
-            "program": "${file}",
-            "args": [],
-            "externalConsole": false,
-            "port": 9003
-        },
-
-        //// Debug PHP App
-        {
-            "name": "PHP App",
+            "name": "Backend",
             "type": "php",
             "request": "launch",
             "program": "${workspaceFolder}/debug.php",
@@ -25,26 +14,15 @@
             "port": 9003
         },
 
-        //// Debug currently open JS file
+        //// Debug Frontend
         {
-            "name": "JS File",
-            "type": "node",
+            "name": "Frontend",
+            "type": "php",
             "request": "launch",
-            "program": "${file}",
-            "skipFiles": [
-                "<node_internals>/**"
-            ]
-        },
-
-        //// Debug JS App
-        {
-            "name": "JS App",
-            "type": "node",
-            "request": "launch",
-            "program": "${workspaceFolder}/index.js",
-            "skipFiles": [
-                "<node_internals>/**"
-            ]
+            "program": "${workspaceFolder}/public/index.php",
+            "args": [],
+            "externalConsole": false,
+            "port": 9003
         }
 
     ]

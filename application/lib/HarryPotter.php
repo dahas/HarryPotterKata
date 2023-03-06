@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace PHPSkeleton\App;
+namespace PHPSkeleton\Library;
 
 use PHPSkeleton\Sources\enums\Book;
 
@@ -10,15 +10,6 @@ class HarryPotter {
     private int $price = 8;
     private array $discount = [1, 0.95, 0.9, 0.8, 0.75];
 
-    /**
-     * This function does most of the magic:
-     * 
-     * - Depending on the amount of books, we create a sub-array for each book 
-     *   so we have NO duplicates in a set.
-     * - Then, for every added book, we check whether it's in a set already or not. 
-     * - Finally we sort the basket so the smallest set is at the top. By doing this 
-     *   we evenly distribute the sets, so the user gets the best possible discount.
-     */
     public function add2Basket(Book $book, int $amount): void
     {
         for ($x = 0; $x < $amount; $x++) {
@@ -30,9 +21,6 @@ class HarryPotter {
                 $this->basket[][] = $book;
             }
         }
-        usort($this->basket, function ($a, $b) {
-            return sizeof($a) - sizeof($b);
-        });
     }
 
     public function getBasket(): array

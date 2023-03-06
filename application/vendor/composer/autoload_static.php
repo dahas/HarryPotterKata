@@ -17,6 +17,7 @@ class ComposerStaticInit5d67038eb9654b79a22400a5c548e80b
             'PhpParser\\' => 10,
             'PHPSkeleton\\Sources\\' => 20,
             'PHPSkeleton\\Services\\' => 21,
+            'PHPSkeleton\\Library\\' => 20,
             'PHPSkeleton\\App\\' => 16,
         ),
         'D' => 
@@ -38,9 +39,13 @@ class ComposerStaticInit5d67038eb9654b79a22400a5c548e80b
         array (
             0 => __DIR__ . '/../..' . '/services',
         ),
-        'PHPSkeleton\\App\\' => 
+        'PHPSkeleton\\Library\\' => 
         array (
             0 => __DIR__ . '/../..' . '/lib',
+        ),
+        'PHPSkeleton\\App\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/frontend',
         ),
         'DeepCopy\\' => 
         array (

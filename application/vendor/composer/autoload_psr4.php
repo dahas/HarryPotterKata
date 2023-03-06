@@ -9,6 +9,7 @@ return array(
     'PhpParser\\' => array($vendorDir . '/nikic/php-parser/lib/PhpParser'),
     'PHPSkeleton\\Sources\\' => array($baseDir . '/src'),
     'PHPSkeleton\\Services\\' => array($baseDir . '/services'),
-    'PHPSkeleton\\App\\' => array($baseDir . '/lib'),
+    'PHPSkeleton\\Library\\' => array($baseDir . '/lib'),
+    'PHPSkeleton\\App\\' => array($baseDir . '/frontend'),
     'DeepCopy\\' => array($vendorDir . '/myclabs/deep-copy/src/DeepCopy'),
 );

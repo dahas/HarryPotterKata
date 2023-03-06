@@ -6,7 +6,7 @@
 - Composer
 - PHPUnit 
 
-## Installation & Usage
+## Installation
 
 ````
 $ git clone https://github.com/dahas/HarryPotterKata.git
@@ -16,8 +16,6 @@ $ composer install
 ````
 
 ## Im Browser ausführen 
-
-(Es gibt momentan noch keine UI. Führe das Programm bitte in der Konsole aus. Siehe unten.)
 
 Sieh zu, dass Du Dich im Root-Verzeichnis `HarryPotterKata` befindest. Starte von dort aus den Webserver:
 
@@ -29,7 +27,7 @@ Open Browser: http://localhost:2400
 
 ## In der Konsole ausführen
 
-Auch hier musst Du Dich im Root-Verzeichnis `HarryPotterKata` befinden. Führe `debug.php` im Terminal der IDE aus.
+Auch hierzu musst Du Dich im Root-Verzeichnis `HarryPotterKata` befinden. Führe `debug.php` im Terminal der IDE aus.
 
 ````
 $ php debug.php
@@ -38,8 +36,6 @@ $ php debug.php
 ## Tests ausführen
 
 Alle Tests befinden sich im Verzeichnis `application/tests`.
-
-Tests ausführen:
 
 ````
 $ cd application
@@ -100,7 +96,7 @@ Die Herausforderung besteht im Kern darin, einen Algorithmus zu entwickeln, der 
 
 ### Fallstrick 
 
-Der Rabatt ist nicht gleimäßig in 5%-Schritte gestaffelt. Das macht den Algorithmus fehleranfällig. 
+Der Rabatt ist nicht gleichmäßig in 5%-Schritten gestaffelt. Das macht den Algorithmus kompliziert und fehleranfällig. 
 
 ## Wahl der richtigen Technologie
 
@@ -110,6 +106,6 @@ Die Berechnung eines Preises, Angebots und/oder eines Rabatts muss aus Sicherhei
 
 Die Angebotsberechnung ist eine kritische Funktion, die bei einem falschen Ergebnis sowohl beim Anbieter als auch beim Anwender Schaden verursachen kann. Daher muss die Kalkulation zwingend validiert und abgesichert werden. Dazu werden für unterschiedliche Use-Cases **Unit-Tests** implementiert.
 
-# Known Bugs
+# Bekannte Probleme
 
-**Test H** schlägt fehl. Statt 29.60 wird 30.40 berechnet. In diesem Fall ergibt ein Set mit drei Bänden und einem doppeltem Buch mehr Rabatt, als 2 Sets mit je 2 Bänden. Hier muss der Algorithums noch verfeinert werden.
+**Test J** und **Test K** schlagen fehl. Hat mit der Rabattstaffelung zu tun. Bevor ich den Algorithums entsprechend anpasse, würde ich die Staffelung mit dem Kunden klären.

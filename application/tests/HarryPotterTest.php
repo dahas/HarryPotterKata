@@ -1,7 +1,7 @@
 <?php declare(strict_types=1);
 
 use PHPUnit\Framework\TestCase;
-use PHPSkeleton\App\HarryPotter;
+use PHPSkeleton\Library\HarryPotter;
 use PHPSkeleton\Sources\enums\Book;
 
 class HarryPotterTest extends TestCase {
