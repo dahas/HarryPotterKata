@@ -15,7 +15,7 @@ function checkout() {
     }
 
     console.log("POST:", volumes);
-    
+
     $("#result").html("");
     $("#loader").show();
 
@@ -25,10 +25,8 @@ function checkout() {
         data: volumes,
         dataType: "json"
     }).done(resp => {
-        setTimeout(() => {
-            $("#loader").hide();
-            $("#result").html(resp + " EUR");
-            console.log("RESPONSE:", resp);
-        }, 250);
+        $("#loader").hide();
+        $("#result").html(resp + " EUR");
+        console.log("RESPONSE:", resp);
     });
 }
