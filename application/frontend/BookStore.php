@@ -2,15 +2,15 @@
 
 namespace PHPSkeleton\App;
 
-use PHPSkeleton\Sources\Template;
+use DH\Essentials\EasyTemplate;
 
 class BookStore {
 
-    private Template $template;
+    private EasyTemplate $template;
 
     public function __construct()
     {
-        $this->template = new Template(__DIR__ . "/BookStore.html");
+        $this->template = new EasyTemplate(__DIR__ . "/BookStore.html");
     }
 
     public function render()

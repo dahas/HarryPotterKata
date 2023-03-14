@@ -12,4 +12,5 @@ return array(
     'PHPSkeleton\\Library\\' => array($baseDir . '/lib'),
     'PHPSkeleton\\App\\' => array($baseDir . '/frontend'),
     'DeepCopy\\' => array($vendorDir . '/myclabs/deep-copy/src/DeepCopy'),
+    'DH\\Essentials\\' => array($vendorDir . '/dahas/easy-template/src'),
 );
